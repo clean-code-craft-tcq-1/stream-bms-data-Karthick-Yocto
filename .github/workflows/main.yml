@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: build
-      run: g++ -Wall -Wextra -o sender-executable *.c*
+      run: g++ -Wall -Wextra -o sender-executable *.cpp*
       
     - name: run
       run: ./sender-executable

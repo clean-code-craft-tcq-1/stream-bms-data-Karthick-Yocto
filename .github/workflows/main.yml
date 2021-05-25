@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: build
-      run: g++ -Wall -Wextra -o sender-executable ../BMS_Data_Sender/BMS_Sender.cpp
+      run: g++ -Wall -Wextra -o sender-executable /BMS_Data_Sender/BMS_Sender.cpp
       
     - name: run
       run: ./sender-executable

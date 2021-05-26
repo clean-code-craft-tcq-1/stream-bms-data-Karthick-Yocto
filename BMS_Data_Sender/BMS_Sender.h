@@ -17,6 +17,7 @@ public:
     float BmsSender_Temperture();
     float BmsSender_SOC();
     int randomNumberGenerator(int min_value, int max_value);
+    void OutputData();
     bool printOnConsole(std::string parameterType, int GenerateNumbers);
 
 };

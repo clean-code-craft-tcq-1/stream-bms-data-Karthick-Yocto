@@ -16,6 +16,7 @@ public:
     bool inRange(int minValueChecker, int maxValueChecker);
     float BmsSender_Temperture();
     float BmsSender_SOC();
+    int randomNumberGenerator(int min_value, int max_value);
     bool printOnConsole(std::string parameterType, int GenerateNumbers);
 
 };

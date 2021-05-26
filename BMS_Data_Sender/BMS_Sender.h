@@ -1,4 +1,13 @@
 #pragma once
+#define MIN_TEMP    -25.0
+#define MAX_TEMP    100.0
+
+#define ERROR_TEMP  150.0
+
+#define MIN_SOC     0.0
+#define MAX_SOC     100.0
+
+#define ERROR_SOC   255.0
 
 class BMSParameter
 {

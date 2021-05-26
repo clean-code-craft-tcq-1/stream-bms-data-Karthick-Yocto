@@ -8,7 +8,7 @@
 #define MIN_SOC     0.0
 #define MAX_SOC     150.0
 
-
+#define ERROR     -1
 
 class BMSParameter
 {

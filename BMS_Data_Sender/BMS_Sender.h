@@ -1,12 +1,12 @@
 #pragma once
 
 //Temperature
-#define MIN_TEMP    -25.0
+#define MIN_TEMP    0.0
 #define MAX_TEMP    100.0
 
 //SOC
 #define MIN_SOC     0.0
-#define MAX_SOC     100.0
+#define MAX_SOC     150.0
 
 
 

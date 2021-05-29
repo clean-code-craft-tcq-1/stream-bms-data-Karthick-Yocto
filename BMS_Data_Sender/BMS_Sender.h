@@ -16,7 +16,7 @@ private:
     float temperature;
 	float SOC;
 public:
-    bool inRange(int minValueChecker, int maxValueChecker);
+    bool inRange(float current_value, float min_value, float max_value);
     float BmsSender_Temperture();
     float BmsSender_SOC();
     float  randomNumberGenerator(int min_value, int max_value);

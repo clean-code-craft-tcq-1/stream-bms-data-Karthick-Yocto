@@ -15,7 +15,9 @@ class BMSParameter
 {
 private:
     float temperature;
-	float SOC;
+    float SOC;
+    stringstream outputData;
+    char outputJsonData[254];
 public:
     bool inRange(float current_value, float min_value, float max_value);
     float BmsSender_Temperture();

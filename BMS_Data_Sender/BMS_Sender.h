@@ -1,4 +1,5 @@
 #pragma once
+#include <sstream>
 
 //Temperature
 #define MIN_TEMP    0.0

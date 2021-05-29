@@ -15,14 +15,14 @@ bool BMSParameter::inRange(float current_value, float min_value, float max_value
 
  float BMSParameter::BmsSender_Temperture()
  {
-        float temperature = randomNumberGenerator(MIN_TEMP,MAX_TEMP);
+        return randomNumberGenerator(MIN_TEMP,MAX_TEMP);
 
      //   isInRange(Temperture, MIN_TEMP, MAX_TEMP) ? return temperature: return ERROR;
  }
     
  float BMSParameter::BmsSender_SOC()
  {
-       float SOC = randomNumberGenerator(MIN_SOC,MAX_SOC);
+       return randomNumberGenerator(MIN_SOC,MAX_SOC);
        
     //   isInRange(SOC, MIN_SOC, MAX_SOC) ? return SOC: return ERROR; 
  }

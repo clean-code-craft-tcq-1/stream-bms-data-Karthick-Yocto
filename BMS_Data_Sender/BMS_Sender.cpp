@@ -6,6 +6,7 @@
 * *********************************************************************************************************** */
 #include<iostream>
 #include <stdlib.h>
+#include <sstream>
 #include "BMS_Sender.h"
 
 bool BMSParameter::inRange(float current_value, float min_value, float max_value)

@@ -33,7 +33,7 @@ float  BMSParameter::randomNumberGenerator(int min_value, int max_value)
       return ((rand() % (min_value - max_value + 1)) + min_value);         
 }
 
-void BMSParameter::OutputData()
+std::stringstream BMSParameter::OutputData()
 {
      
    temperature =BmsSender_Temperture();
@@ -43,7 +43,7 @@ void BMSParameter::OutputData()
    std::stringstream outputData;
    outputData << "{\"Temperature\": "<< temperature << " ,\"SOC\": " << SOC <<" }";
   
- //  printOnConsole(outputData);
+    return outputData;
 }
 
  void BMSParameter::printOnConsole(std::stringstream parameterType)
@@ -51,8 +51,4 @@ void BMSParameter::OutputData()
    std::cout<<parameterType.str()<<std::endl;
  }
 
-main()
-{
-      BMSParameter obj;
-   obj.OutputData();
-}
+

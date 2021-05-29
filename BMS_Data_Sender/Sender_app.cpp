@@ -17,7 +17,7 @@ int main()
 	while(1)
 	{
 		std::stringstream outputData=sender_obj->OutputJsonData();
-		sender_obj->printOnConsole();
+		sender_obj->printOnConsole(outputData);
 		sleep(500);
 	}
 	return 0;

@@ -15,27 +15,28 @@ bool BMSParameter::inRange(float current_value, int min_value, int max_value)
 
  float BMSParameter::BmsSender_Temperture()
  {
-        int Temperture  = randomNumberGenerator(MIN_TEMP,MAX_TEMP);
+        float temperature = randomNumberGenerator(MIN_TEMP,MAX_TEMP);
 
-        isInRange(Temperture, MIN_TEMP, MAX_TEMP) ? return Temperture: return ERROR;
+        isInRange(Temperture, MIN_TEMP, MAX_TEMP) ? return temperature: return ERROR;
  }
     
  float BMSParameter::BmsSender_SOC()
  {
-       int SOC = randomNumberGenerator(MIN_SOC,MAX_SOC);
+       float SOC = randomNumberGenerator(MIN_SOC,MAX_SOC);
        
        isInRange(SOC, MIN_SOC, MAX_SOC) ? return SOC: return ERROR; 
  }
    
-int BMSParameter::randomNumberGenerator(int min_value, int max_value)
+float  BMSParameter::randomNumberGenerator(int min_value, int max_value)
 {
-      return (rand() % (min_value - max_value + 1)) + min_value;         
+      return ((rand() % (min_value - max_value + 1)) + min_value);         
 }
 
 void BMSParameter::OutputData()
 {
- 
+     
    temperature =BmsSender_Temperture();
+      
    SOC= BmsSender_SOC();
    
    Jsondata.put("Temperature", Temperature);

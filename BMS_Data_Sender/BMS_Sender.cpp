@@ -43,7 +43,7 @@ void BMSParameter::OutputData()
    std::stringstream outputData;
    outputData << "{\"Temperature\": "<< temperature << " ,\"SOC\": " << SOC <<" }";
   
-   printOnConsole(outputData);
+ //  printOnConsole(outputData);
 }
 
  void BMSParameter::printOnConsole(std::stringstream parameterType)

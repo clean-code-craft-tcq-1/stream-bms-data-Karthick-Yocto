@@ -16,7 +16,8 @@ int main()
 	BMSParameter * sender_obj = new BMSParameter;
 	while(1)
 	{
-		sender_obj->printOnConsole(sender_obj->OutputJsonData());
+		std::stringstream outputData=sender_obj->OutputJsonData();
+		sender_obj->printOnConsole();
 		sleep(500);
 	}
 	return 0;

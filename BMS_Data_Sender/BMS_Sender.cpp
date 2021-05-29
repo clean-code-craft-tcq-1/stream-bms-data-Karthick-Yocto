@@ -19,15 +19,12 @@ bool BMSParameter::inRange(float current_value, float min_value, float max_value
  float BMSParameter::BmsSender_Temperture()
  {
         return randomNumberGenerator(MIN_TEMP,MAX_TEMP);
-
-     //   isInRange(Temperture, MIN_TEMP, MAX_TEMP) ? return temperature: return ERROR;
  }
     
  float BMSParameter::BmsSender_SOC()
  {
        return randomNumberGenerator(MIN_SOC,MAX_SOC);
        
-    //   isInRange(SOC, MIN_SOC, MAX_SOC) ? return SOC: return ERROR; 
  }
    
 float  BMSParameter::randomNumberGenerator(int min_value, int max_value)
@@ -36,17 +33,12 @@ float  BMSParameter::randomNumberGenerator(int min_value, int max_value)
 }
 
 char* BMSParameter::OutputJsonData()
-{
-     
-   temperature =BmsSender_Temperture();
-      
+{     
+   temperature =BmsSender_Temperture();   
    SOC= BmsSender_SOC();
-   
-//   std::stringstream outputData;
- //  outputData << "{\"Temperature\": "<< temperature << " ,\"SOC\": " << SOC <<" }";
    sprintf(outputJsonData, "{\"Temperature\":%f,\"SOC\":%f}", temperature, SOC);
   
-    return outputJsonData;
+   return outputJsonData;
 }
 
  void BMSParameter::printOnConsole(char *Jsondata)

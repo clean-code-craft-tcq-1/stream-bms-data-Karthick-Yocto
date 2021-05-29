@@ -48,7 +48,7 @@ void BMSParameter::OutputData()
 
  void BMSParameter::printOnConsole(std::string parameterType)
  {
-   cout<<parameterType<<endl;
+   std::cout<<parameterType.str()<<endl;
  }
 
 main()

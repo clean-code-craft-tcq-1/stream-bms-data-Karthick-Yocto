@@ -9,6 +9,14 @@
 #include <sstream>
 #include "BMS_Sender.h"
 
+BMSParameter()
+{
+   temperature =BmsSender_Temperture();
+      
+   SOC= BmsSender_SOC();  
+   outputData << "{\"Temperature\": "<< temperature << " ,\"SOC\": " << SOC <<" }";  
+}
+
 bool BMSParameter::inRange(float current_value, float min_value, float max_value)
 {
       return((current_value >= min_value) && (current_value <= max_value));
@@ -36,14 +44,14 @@ float  BMSParameter::randomNumberGenerator(int min_value, int max_value)
 std::stringstream BMSParameter::OutputJsonData()
 {
      
-   temperature =BmsSender_Temperture();
+//   temperature =BmsSender_Temperture();
       
-   SOC= BmsSender_SOC();
+//   SOC= BmsSender_SOC();
    
-   std::stringstream outputData;
-   outputData << "{\"Temperature\": "<< temperature << " ,\"SOC\": " << SOC <<" }";
+//   std::stringstream outputData;
+ //  outputData << "{\"Temperature\": "<< temperature << " ,\"SOC\": " << SOC <<" }";
   
-    return outputData;
+ //   return outputData;
 }
 
  void BMSParameter::printOnConsole(std::stringstream parameterType)

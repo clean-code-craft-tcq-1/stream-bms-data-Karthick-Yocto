@@ -23,7 +23,7 @@ public:
     float BmsSender_Temperture();
     float BmsSender_SOC();
     float  randomNumberGenerator(int min_value, int max_value);
-    std::stringstream OutputJsonData();
+    char* OutputJsonData();
     void printOnConsole(char*);
 
 };

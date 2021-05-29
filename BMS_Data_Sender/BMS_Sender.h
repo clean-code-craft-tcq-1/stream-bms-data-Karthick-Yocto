@@ -12,6 +12,9 @@
 
 class BMSParameter
 {
+private:
+    float temperature;
+	float SOC;
 public:
     bool inRange(int minValueChecker, int maxValueChecker);
     float BmsSender_Temperture();

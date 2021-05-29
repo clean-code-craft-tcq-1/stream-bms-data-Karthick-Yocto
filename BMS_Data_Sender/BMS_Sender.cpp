@@ -33,7 +33,7 @@ float  BMSParameter::randomNumberGenerator(int min_value, int max_value)
       return ((rand() % (min_value - max_value + 1)) + min_value);         
 }
 
-std::stringstream BMSParameter::OutputData()
+std::stringstream BMSParameter::OutputJsonData()
 {
      
    temperature =BmsSender_Temperture();

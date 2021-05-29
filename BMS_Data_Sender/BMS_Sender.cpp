@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include "BMS_Sender.h"
 
-bool BMSParameter::inRange(float current_value, int min_value, int max_value)
+bool BMSParameter::inRange(float current_value, float min_value, float max_value)
 {
       return((current_value >= min_value) && (current_value <= max_value));
 }

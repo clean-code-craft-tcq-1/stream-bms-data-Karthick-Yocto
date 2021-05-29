@@ -53,5 +53,6 @@ void BMSParameter::OutputData()
 
 main()
 {
-   OutputData();
+      BMSParameter obj;
+   obj.OutputData();
 }

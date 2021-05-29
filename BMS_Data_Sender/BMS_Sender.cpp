@@ -49,9 +49,9 @@ std::stringstream BMSParameter::OutputJsonData()
     return outputJsonData;
 }
 
- void BMSParameter::printOnConsole(std::stringstream parameterType)
+ void BMSParameter::printOnConsole(char *Jsondata)
  {
-   std::cout<<parameterType.str()<<std::endl;
+   std::cout<<Jsondata<<std::endl;
  }
 
 

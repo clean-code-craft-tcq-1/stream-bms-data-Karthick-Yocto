@@ -39,9 +39,6 @@ void BMSParameter::OutputData()
       
    SOC= BmsSender_SOC();
    
-   Jsondata.put("Temperature", Temperature);
-   Jsondata.put("SOC", SOC);
-   
    std::stringstream output;
    outputData << "{\"Temperature\": "<< temperature << " ,\"SOC\": " << SOC <<" }";
   

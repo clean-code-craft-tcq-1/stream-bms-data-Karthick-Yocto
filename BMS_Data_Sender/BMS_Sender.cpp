@@ -40,10 +40,10 @@ void BMSParameter::OutputData()
       
    SOC= BmsSender_SOC();
    
-   std::stringstream output;
-   output << "{\"Temperature\": "<< temperature << " ,\"SOC\": " << SOC <<" }";
+   std::stringstream outputData;
+   outputData << "{\"Temperature\": "<< temperature << " ,\"SOC\": " << SOC <<" }";
   
-   printOnConsole(output);
+   printOnConsole(outputData);
 }
 
  void BMSParameter::printOnConsole(std::stringstream parameterType)

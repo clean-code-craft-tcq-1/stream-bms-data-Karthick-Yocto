@@ -6,8 +6,6 @@
 * *********************************************************************************************************** */
 #include<iostream>
 #include <stdlib.h>
-#include <boost/property_tree/ptree.hpp>
-#include <boost/property_tree/json_parser.hpp>
 #include "BMS_Sender.h"
 
 bool BMSParameter::inRange(float current_value, int min_value, int max_value)
@@ -36,15 +34,15 @@ int BMSParameter::randomNumberGenerator(int min_value, int max_value)
 
 void BMSParameter::OutputData()
 {
-   boost::property_tree::ptree Jsondata;
-   int Temperature =BmsSender_Temperture();
-   int SOC= BmsSender_SOC();
+ 
+   temperature =BmsSender_Temperture();
+   SOC= BmsSender_SOC();
    
    Jsondata.put("Temperature", Temperature);
    Jsondata.put("SOC", SOC);
    
    std::stringstream output;
-   boost::property_tree::json_parser::write_json(output, Jsondata);
+   outputData << "{\"Temperature\": "<< temperature << " ,\"SOC\": " << SOC <<" }";
   
    printOnConsole(output);
 }

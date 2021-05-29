@@ -21,7 +21,7 @@ public:
     float BmsSender_SOC();
     float  randomNumberGenerator(int min_value, int max_value);
     void OutputData();
-    bool printOnConsole(std::string parameterType);
+    bool printOnConsole(std::stringstream parameterType);
 
 };
 

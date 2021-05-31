@@ -18,7 +18,7 @@ int main()
 	{
 		char* outputData=sender_obj->OutputJsonData();
 		sender_obj->printOnConsole(outputData);
-		sleep(10);
+		sleep(30);
 	}
 	return 0;
 }

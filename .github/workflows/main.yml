@@ -16,9 +16,6 @@ jobs:
       - name: build
       run: g++ -std=c++11 -Wall -Wextra -o sender-executable BMS_Data_Sender/*.cpp 
       
-    - name: build-test
-      run: g++ -std=c++11 -Wall -Wextra -o test-executable BMS_Data_Sender/BMS_Sender.cpp Test_Sender/*.cpp
- 
     - name: run
       run: ./sender-executable
     

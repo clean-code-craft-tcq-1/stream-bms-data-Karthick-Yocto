@@ -15,7 +15,7 @@ TEST_CASE("BMS Data Sender Test")
       	    std::cout<<"Temperature="<<temperature<<std::endl;
 	    std::cout<<"SOC="<<SOC<<std::endl;
       
-	    REQUIRE(sender_obj->inRange(temperature, MIN_SOC, MAX_SOC));
-	    REQUIRE(sender_obj->inRange(SOC, MIN_TEMP, MAX_TEMP));
+	    REQUIRE(sender_obj->inRange(SOC, MIN_SOC, MAX_SOC));
+	    REQUIRE(sender_obj->inRange(temperature, MIN_TEMP, MAX_TEMP));
     }
 }

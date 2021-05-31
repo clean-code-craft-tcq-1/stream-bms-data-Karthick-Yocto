@@ -14,7 +14,7 @@ jobs:
       run: sudo apt-get install -y gcovr
       
     - name: build
-      run: g++ -std=c++11 -Wall -Wextra -o sender-executable BMS_Data_Sender/*.cpp Test_Sender/*.cpp
+      run: g++ -std=c++11 -Wall -Wextra -o sender-executable BMS_Data_Sender/BMS_Sender.cpp Test_Sender/*.cpp
  
     - name: run
       run: ./sender-executable

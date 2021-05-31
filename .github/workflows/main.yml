@@ -17,7 +17,7 @@ jobs:
       run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -o sender-executable BMS_Data_Sender/*.cpp
     
     - name: build-test
-      run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -o test-executable BMS_Data_Sender/*.c* Test_Sender/*.c*
+      run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -o test-executable Test_Sender/*.cpp BMS_Data_Sender/*.cpp 
     
       - name: run
       run: ./test-executable

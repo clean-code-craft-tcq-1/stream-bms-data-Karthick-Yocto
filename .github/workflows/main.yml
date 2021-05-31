@@ -12,9 +12,6 @@ jobs:
 
     - name: install coverage tool
       run: sudo apt-get install -y gcovr
-      
-    - name: build
-      run: g++ -std=c++11 -Wall -Wextra -o sender-executable BMS_Data_Sender/*.cpp
      
      - name: build-test
       run: g++ -std=c++11 -Wall -Wextra -o test-executable Test_Sender/*.cpp BMS_Data_Sender/*.cpp

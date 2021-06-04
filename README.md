@@ -72,3 +72,9 @@ This section lists the minimum functionality of the Sender and Receiver.
 ## Quality Parameters
 
 Setup the quality parameters of your project (duplication, complexity, coverage, warnings) using the GitHub workflow yml files.
+
+
+## Test application
+ To execute test application use below commands in main.yml file
+  - name: build-test
+      run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -o test-executable Test_Sender/*.cpp BMS_Data_Sender/BMS_Sender.cpp.cpp 

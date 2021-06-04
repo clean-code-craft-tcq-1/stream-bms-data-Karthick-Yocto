@@ -15,7 +15,7 @@ int main()
 {
 	BMSParameter * sender_obj = new BMSParameter;
 	int Iteration=0;
-	while(Iteration++>30)
+	while(Iteration++<30)
 	{
 		char* outputData=sender_obj->OutputJsonData();
 		sender_obj->printOnConsole(outputData);

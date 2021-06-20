@@ -15,7 +15,7 @@ namespace BMS_DataStream_Receiver
             BatteryParameters Parameobj = new BatteryParameters();
             if (rawInput != null)
             {
-                var ParameterValue = Regex.Matches(rawInput[0], @"\d+").Cast<Match>().Select(x => float.Parse(x.Value)).ToArray();
+            var ParameterValue = Regex.Matches(rawInput[0], @"\d+\.?\d*").Cast<Match>().Select(x => float.Parse(x.Value)).ToArray();
                 if (ParameterValue.Length == 2)
                 {
 

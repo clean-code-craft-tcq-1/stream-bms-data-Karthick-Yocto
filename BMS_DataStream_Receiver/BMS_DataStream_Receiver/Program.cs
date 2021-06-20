@@ -19,9 +19,9 @@ namespace BMS_DataStream_Receiver
             int i = 0;
             Console.WriteLine(ReceivedData);
             var inputstream = ReceivedData.Split('\n');
-            //string value = string.Empty;
-            //   while ((value = Console.ReadLine()) != null)
-            foreach (var value in inputstream)
+            string value = string.Empty;
+               while ((value = Console.ReadLine()) != null)
+           // foreach (var value in inputstream)
 
             {
                 if (value != string.Empty && value!=null)

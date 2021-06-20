@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1022
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMS_DataStream_Receiver", "BMS_DataStream_Receiver\BMS_DataStream_Receiver.csproj", "{EA99D680-0424-4566-9AE6-244D44BB1513}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMS_DataStream_receiver_Test", "BMS_DataStream_receiver_Test\BMS_DataStream_receiver_Test.csproj", "{C1B9EC07-A8AE-4F16-BB7E-11C650DF3670}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA99D680-0424-4566-9AE6-244D44BB1513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA99D680-0424-4566-9AE6-244D44BB1513}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA99D680-0424-4566-9AE6-244D44BB1513}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA99D680-0424-4566-9AE6-244D44BB1513}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1B9EC07-A8AE-4F16-BB7E-11C650DF3670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1B9EC07-A8AE-4F16-BB7E-11C650DF3670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1B9EC07-A8AE-4F16-BB7E-11C650DF3670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1B9EC07-A8AE-4F16-BB7E-11C650DF3670}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B33E391-F088-4218-B6BB-7D9DA8CD9EDF}
+	EndGlobalSection
+EndGlobal

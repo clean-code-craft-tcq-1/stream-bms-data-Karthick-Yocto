@@ -34,8 +34,6 @@ jobs:
     - name: Make coverage report-Receiver 
       run: reportgenerator "-reports:BMS_DataStream_Receiver\BMS_DataStream_receiver_Test\TestResults\*\*.xml" "-targetdir:coverage"
     
-	
-	
     - name: Create coverage artifact
       uses: actions/upload-artifact@v2
       with:

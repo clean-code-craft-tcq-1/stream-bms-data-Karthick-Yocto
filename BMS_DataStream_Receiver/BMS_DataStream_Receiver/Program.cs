@@ -47,26 +47,6 @@ namespace BMS_DataStream_Receiver
        
         }
 
-       public static string GenerateRandomNumber()
-        {
-            Random random_no = new Random();
-            string input = string.Empty;
-          
-            using (StringWriter stringWriter = new StringWriter())
-            {
-                var originalStream = Console.Out;
-                Console.SetOut(stringWriter);
-                for (int i = 0; i < 15; i++)
-                {
-                    Console.WriteLine("Temperature=" + random_no.Next(100) + " ,SOC=" + random_no.Next(100));
-                }
-                input = stringWriter.ToString();
-                Console.SetOut(originalStream);
-                return input;
-            }
-
-
-        }
     }
 
 }

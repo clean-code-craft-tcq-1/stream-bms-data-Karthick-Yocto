@@ -19,7 +19,7 @@ int main()
 	{
 		char* outputData=sender_obj->OutputJsonData();
 		sender_obj->printOnConsole(outputData);
-		sleep(30);
+		sleep(4);
 	}
 	return 0;
 }
